@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN ls -lah /app  # Debugging step to verify files are copied
 
 # Install dependencies
-RUN npm install
+RUN npm install -y
 
 # Copy the rest of the application files
 COPY . .
